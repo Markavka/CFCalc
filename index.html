@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>CF</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<p class="ps">Результаты округляются в меньшую сторону*</p>
+
+	<div class="header"><p class="exorcist">ЭКЗОРЦИСТ</p></div>
+
+	<main class="main">
+		<div class="calc">
+			<div class="elem">
+				<p>Урон: <input class="elem1" id="damage" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Шанс: <input class="elem2" id="chance" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Крит: <input class="elem3" id="crit" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Дробовик: <input class="elem4" id="shotgun" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Мобам: <input class="elem5" id="mob" type="text" value="0"></p>
+			</div>
+			<div class="button"><button class="btn" onclick="calc()" >Посчитать</button></div>
+
+
+<!--                ПКМ                -->
+
+			<p class="type" id="pkm"></p>
+			<p class="result" id="maxDamage"></p>
+			<p class="result crit" id="maxCrit"></p>
+			<p class="result" id="littleDamage"></p>
+			<p class="result crit" id="littleCrit"></p><br>
+
+			<p class="break" id="break10pkm"></p>
+			<p class="result" id="maxChanceDamage"></p>
+			<p class="result crit" id="maxChanceCrit"></p>
+			<p class="result" id="maxChanceLittleDamage"></p>
+			<p class="result crit" id="maxChanceLittleCrit"></p>
+			<p class="result full" id="full"></p><br>
+
+			<p class="break" id="break100pkm"></p>
+			<p class="result" id="maxChanceDamage100"></p>
+			<p class="result crit" id="maxChanceCrit100"></p>
+			<p class="result" id="maxChanceLittleDamage100"></p>
+			<p class="result crit" id="maxChanceLittleCrit100"></p>
+			<p class="result full" id="full100"></p>
+
+<!--                ЛКМ                -->
+
+			<p class="type" id="lkm"></p>
+			<p class="result" id="maxHeadDamage"></p>
+			<p class="result crit" id="maxHeadCrit"></p>
+			<p class="result" id="maxNeckDamage"></p>
+			<p class="result crit" id="maxNeckCrit"></p>
+			<p class="result" id="maxBodyDamage"></p>
+			<p class="result crit" id="maxBodyCrit"></p><br>
+
+			<p class="break" id="break10lkm"></p>
+			<p class="result" id="maxChanceHeadDamage"></p>
+			<p class="result crit" id="maxChanceHeadCrit"></p>
+			<p class="result full" id="fullHead"></p>
+			<p class="result" id="maxChanceNeckDamage"></p>
+			<p class="result crit" id="maxChanceNeckCrit"></p>
+			<p class="result full" id="fullNeck"></p>
+			<p class="result" id="maxChanceBodyDamage"></p>
+			<p class="result crit" id="maxChanceBodyCrit"></p>
+			<p class="result full" id="fullBody"></p><br>
+
+			<p class="break" id="break100lkm"></p>
+			<p class="result" id="maxChanceHeadDamage100"></p>
+			<p class="result crit" id="maxChanceHeadCrit100"></p>
+			<p class="result full" id="fullHead100"></p>
+			<p class="result" id="maxChanceNeckDamage100"></p>
+			<p class="result crit" id="maxChanceNeckCrit100"></p>
+			<p class="result full" id="fullNeck100"></p>
+			<p class="result" id="maxChanceBodyDamage100"></p>
+			<p class="result crit" id="maxChanceBodyCrit100"></p>
+			<p class="result full" id="fullBody100"></p>
+
+		</div>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+
+		<div class="calc_1">
+			<div class="elem">
+				<p>Урон: <input class="elem1" id="damage_1" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Шанс: <input class="elem2" id="chance_1" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Крит: <input class="elem3" id="crit_1" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Дробовик: <input class="elem4" id="shotgun_1" type="text" value="0"></p>
+			</div>
+			<div class="elem">
+				<p>Мобам: <input class="elem5" id="mob_1" type="text" value="0"></p>
+			</div>
+			<div class="button"><button class="btn" onclick="calc_1()">Посчитать</button></div>
+
+
+			<!--                ПКМ                -->
+
+			<p class="type" id="pkm_1"></p>
+			<p class="result" id="maxDamage_1"></p>
+			<p class="result crit" id="maxCrit_1"></p>
+			<p class="result" id="littleDamage_1"></p>
+			<p class="result crit" id="littleCrit_1"></p><br>
+
+			<p class="break" id="break10pkm_1"></p>
+			<p class="result" id="maxChanceDamage_1"></p>
+			<p class="result crit" id="maxChanceCrit_1"></p>
+			<p class="result" id="maxChanceLittleDamage_1"></p>
+			<p class="result crit" id="maxChanceLittleCrit_1"></p>
+			<p class="result full" id="full_1"></p><br>
+
+			<p class="break" id="break100pkm_1"></p>
+			<p class="result" id="maxChanceDamage100_1"></p>
+			<p class="result crit" id="maxChanceCrit100_1"></p>
+			<p class="result" id="maxChanceLittleDamage100_1"></p>
+			<p class="result crit" id="maxChanceLittleCrit100_1"></p>
+			<p class="result full" id="full100_1"></p>
+
+<!--                ЛКМ                -->
+
+			<p class="type" id="lkm_1"></p>
+			<p class="result" id="maxHeadDamage_1"></p>
+			<p class="result crit" id="maxHeadCrit_1"></p>
+			<p class="result" id="maxNeckDamage_1"></p>
+			<p class="result crit" id="maxNeckCrit_1"></p>
+			<p class="result" id="maxBodyDamage_1"></p>
+			<p class="result crit" id="maxBodyCrit_1"></p><br>
+
+			<p class="break" id="break10lkm_1"></p>
+			<p class="result" id="maxChanceHeadDamage_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit_1"></p>
+			<p class="result full" id="fullHead_1"></p>
+			<p class="result" id="maxChanceNeckDamage_1"></p>
+			<p class="result crit" id="maxChanceNeckCrit_1"></p>
+			<p class="result full" id="fullNeck_1"></p>
+			<p class="result" id="maxChanceBodyDamage_1"></p>
+			<p class="result crit" id="maxChanceBodyCrit_1"></p>
+			<p class="result full" id="fullBody_1"></p><br>
+
+			<p class="break" id="break100lkm_1"></p>
+			<p class="result" id="maxChanceHeadDamage100_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit100_1"></p>
+			<p class="result full" id="fullHead100_1"></p>
+			<p class="result" id="maxChanceNeckDamage100_1"></p>
+			<p class="result crit" id="maxChanceNeckCrit100_1"></p>
+			<p class="result full" id="fullNeck100_1"></p>
+			<p class="result" id="maxChanceBodyDamage100_1"></p>
+			<p class="result crit" id="maxChanceBodyCrit100_1"></p>
+			<p class="result full" id="fullBody100_1"></p>
+
+		</div>
+	</main>
+
+	<footer class="footer">Markavka</footer>
+
+	
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

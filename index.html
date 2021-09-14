@@ -29,6 +29,9 @@
 			<div class="elem">
 				<p>Мобам: <input class="elem5" id="mob" type="text" value="0"></p>
 			</div>
+			<div class="elem">
+				<p>Кол-во ВЗ: <input class="elem6" id="pb" type="text" value="0"></p>
+			</div>
 			<div class="button"><button class="btn" onclick="calc()" >Посчитать</button></div>
 
 
@@ -38,21 +41,45 @@
 			<p class="result" id="maxDamage"></p>
 			<p class="result crit" id="maxCrit"></p>
 			<p class="result" id="littleDamage"></p>
-			<p class="result crit" id="littleCrit"></p><br>
+			<p class="result crit" id="littleCrit"></p>
+								<!-- ВЗ -->
+			<p class="result" id="maxDamagePB"></p>
+			<p class="result crit" id="maxCritPB"></p>					
+			<p class="result" id="littleDamagePB"></p>
+			<p class="result crit" id="littleCritPB"></p><br>
+								<!--    -->
 
+					<!-- Шанс за 10 выстрелов -->
 			<p class="break" id="break10pkm"></p>
+
 			<p class="result" id="maxChanceDamage"></p>
 			<p class="result crit" id="maxChanceCrit"></p>
 			<p class="result" id="maxChanceLittleDamage"></p>
 			<p class="result crit" id="maxChanceLittleCrit"></p>
-			<p class="result full" id="full"></p><br>
 
+			<p class="result full" id="full"></p>
+
+
+
+					<!-- Шанс за 100 выстрелов -->
 			<p class="break" id="break100pkm"></p>
+
 			<p class="result" id="maxChanceDamage100"></p>
 			<p class="result crit" id="maxChanceCrit100"></p>
 			<p class="result" id="maxChanceLittleDamage100"></p>
 			<p class="result crit" id="maxChanceLittleCrit100"></p>
+
 			<p class="result full" id="full100"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceDamage100PB"></p>
+			<p class="result crit" id="maxChanceCrit100PB"></p>
+			<p class="result" id="maxChanceLittleDamage100PB"></p>
+			<p class="result crit" id="maxChanceLittleCrit100PB"></p>
+
+			<p class="result full" id="full100PB"></p><br>
+			<p class="result full" id="full100PBSum"></p><br>
+								<!--    -->
 
 <!--                ЛКМ                -->
 
@@ -62,8 +89,17 @@
 			<p class="result" id="maxNeckDamage"></p>
 			<p class="result crit" id="maxNeckCrit"></p>
 			<p class="result" id="maxBodyDamage"></p>
-			<p class="result crit" id="maxBodyCrit"></p><br>
+			<p class="result crit" id="maxBodyCrit"></p>
+								<!-- ВЗ -->
+			<p class="result" id="maxHeadDamagePB"></p>
+			<p class="result crit" id="maxHeadCritPB"></p>
+			<p class="result" id="maxNeckDamagePB"></p>
+			<p class="result crit" id="maxNeckCritPB"></p>
+			<p class="result" id="maxBodyDamagePB"></p>
+			<p class="result crit" id="maxBodyCritPB"></p><br>
+								<!--    -->
 
+					<!-- Шанс за 10 выстрелов -->
 			<p class="break" id="break10lkm"></p>
 			<p class="result" id="maxChanceHeadDamage"></p>
 			<p class="result crit" id="maxChanceHeadCrit"></p>
@@ -75,6 +111,7 @@
 			<p class="result crit" id="maxChanceBodyCrit"></p>
 			<p class="result full" id="fullBody"></p><br>
 
+					<!-- Шанс за 100 выстрелов -->
 			<p class="break" id="break100lkm"></p>
 			<p class="result" id="maxChanceHeadDamage100"></p>
 			<p class="result crit" id="maxChanceHeadCrit100"></p>
@@ -84,7 +121,24 @@
 			<p class="result full" id="fullNeck100"></p>
 			<p class="result" id="maxChanceBodyDamage100"></p>
 			<p class="result crit" id="maxChanceBodyCrit100"></p>
-			<p class="result full" id="fullBody100"></p>
+			<p class="result full" id="fullBody100"></p><br><br>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceHeadDamage100PB"></p>
+			<p class="result crit" id="maxChanceHeadCrit100PB"></p>
+			<p class="result full" id="fullHead100PB"></p>
+			<p class="result full" id="fullHead100PBSum"></p><br>
+
+			<p class="result" id="maxChanceNeckDamage100PB"></p>
+			<p class="result crit" id="maxChanceNeckCrit100PB"></p>
+			<p class="result full" id="fullNeck100PB"></p>
+			<p class="result full" id="fullNeck100PBSum"></p><br>
+
+			<p class="result" id="maxChanceBodyDamage100PB"></p>
+			<p class="result crit" id="maxChanceBodyCrit100PB"></p>
+			<p class="result full" id="fullBody100PB"></p>
+			<p class="result full" id="fullBody100PBSum"></p><br>
+								<!--    -->
 
 		</div>
 
@@ -106,6 +160,9 @@
 			<div class="elem">
 				<p>Мобам: <input class="elem5" id="mob_1" type="text" value="0"></p>
 			</div>
+			<div class="elem">
+				<p>Кол-во ВЗ: <input class="elem6" id="pb_1" type="text" value="0"></p>
+			</div>
 			<div class="button"><button class="btn" onclick="calc_1()">Посчитать</button></div>
 
 
@@ -115,21 +172,38 @@
 			<p class="result" id="maxDamage_1"></p>
 			<p class="result crit" id="maxCrit_1"></p>
 			<p class="result" id="littleDamage_1"></p>
-			<p class="result crit" id="littleCrit_1"></p><br>
+			<p class="result crit" id="littleCrit_1"></p>
+								<!-- ВЗ -->
+			<p class="result" id="maxDamagePB_1"></p>
+			<p class="result crit" id="maxCritPB_1"></p>					
+			<p class="result" id="littleDamagePB_1"></p>
+			<p class="result crit" id="littleCritPB_1"></p><br>
+								<!--    -->
 
 			<p class="break" id="break10pkm_1"></p>
 			<p class="result" id="maxChanceDamage_1"></p>
 			<p class="result crit" id="maxChanceCrit_1"></p>
 			<p class="result" id="maxChanceLittleDamage_1"></p>
 			<p class="result crit" id="maxChanceLittleCrit_1"></p>
-			<p class="result full" id="full_1"></p><br>
+			<p class="result full" id="full_1"></p>
 
 			<p class="break" id="break100pkm_1"></p>
 			<p class="result" id="maxChanceDamage100_1"></p>
 			<p class="result crit" id="maxChanceCrit100_1"></p>
 			<p class="result" id="maxChanceLittleDamage100_1"></p>
 			<p class="result crit" id="maxChanceLittleCrit100_1"></p>
+
 			<p class="result full" id="full100_1"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceCrit100PB_1"></p>
+			<p class="result" id="maxChanceLittleDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceLittleCrit100PB_1"></p>
+
+			<p class="result full" id="full100PB_1"></p><br>
+			<p class="result full" id="full100PBSum_1"></p><br>
+								<!--    -->
 
 <!--                ЛКМ                -->
 
@@ -139,7 +213,15 @@
 			<p class="result" id="maxNeckDamage_1"></p>
 			<p class="result crit" id="maxNeckCrit_1"></p>
 			<p class="result" id="maxBodyDamage_1"></p>
-			<p class="result crit" id="maxBodyCrit_1"></p><br>
+			<p class="result crit" id="maxBodyCrit_1"></p>
+								<!-- ВЗ -->
+			<p class="result" id="maxHeadDamagePB_1"></p>
+			<p class="result crit" id="maxHeadCritPB_1"></p>
+			<p class="result" id="maxNeckDamagePB_1"></p>
+			<p class="result crit" id="maxNeckCritPB_1"></p>
+			<p class="result" id="maxBodyDamagePB_1"></p>
+			<p class="result crit" id="maxBodyCritPB_1"></p><br>
+								<!--    -->
 
 			<p class="break" id="break10lkm_1"></p>
 			<p class="result" id="maxChanceHeadDamage_1"></p>
@@ -162,6 +244,23 @@
 			<p class="result" id="maxChanceBodyDamage100_1"></p>
 			<p class="result crit" id="maxChanceBodyCrit100_1"></p>
 			<p class="result full" id="fullBody100_1"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceHeadDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit100PB_1"></p>
+			<p class="result full" id="fullHead100PB_1"></p>
+			<p class="result full" id="fullHead100PBSum_1"></p><br>
+
+			<p class="result" id="maxChanceNeckDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceNeckCrit100PB_1"></p>
+			<p class="result full" id="fullNeck100PB_1"></p>
+			<p class="result full" id="fullNeck100PBSum_1"></p><br>
+
+			<p class="result" id="maxChanceBodyDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceBodyCrit100PB_1"></p>
+			<p class="result full" id="fullBody100PB_1"></p>
+			<p class="result full" id="fullBody100PBSum_1"></p><br>
+								<!--    -->
 
 		</div>
 	</main>

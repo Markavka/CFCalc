@@ -167,3 +167,8 @@ body {
   color: #E52166;
   margin-bottom: 40px;
 }
+
+.PB {
+  display: inline-block;
+  color: red;
+}

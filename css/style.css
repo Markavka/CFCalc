@@ -115,8 +115,13 @@ body {
   margin-bottom: 15px;
 }
 
+.elem p {
+  display: inline-block;
+}
+
 .elem input {
   height: 20px;
+  max-width: 100%;
   font-size: 15px;
   padding: 5px;
 }
@@ -155,11 +160,10 @@ body {
   color: #00AB78;
 }
 
-.footer {
+.author {
   position: absolute;
+  top: 20px;
   right: 20px;
-  bottom: 0;
-  height: 40px;
   font-size: 14px;
 }
 
@@ -171,4 +175,76 @@ body {
 .PB {
   display: inline-block;
   color: red;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .result {
+    margin-bottom: 10px;
+  }
+  .full {
+    margin-bottom: 30px;
+  }
+  .elem {
+    margin-bottom: 15px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ps {
+    padding: 10px;
+  }
+  .author {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 12px;
+  }
+  .calc, .calc_1 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .elem {
+    margin-bottom: 12px;
+  }
+  .elem p {
+    display: block;
+  }
+  .header {
+    margin: 20px 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ps {
+    padding: 30px 10px 10px;
+  }
+  .author {
+    top: 10px;
+    left: 10px;
+  }
+  .elem input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .header {
+    margin: 15px 0 5px;
+    font-size: 18px;
+  }
 }

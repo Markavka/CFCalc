@@ -138,14 +138,14 @@ body {
   color: #151A1D;
 }
 
-.type {
-  color: #FF9A17;
-  margin: 40px 0 25px;
-}
-
 .break {
   color: #F1C40F;
   margin-bottom: 15px;
+}
+
+.type {
+  color: #FF9A17;
+  margin: 40px 0 25px;
 }
 
 .result {
@@ -174,7 +174,60 @@ body {
 
 .PB {
   display: inline-block;
-  color: red;
+  color: #C22A2A;
+}
+
+.ann {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #F1C40F;
+}
+
+.annP {
+  margin-bottom: 7px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.annotation {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.annotation .prompt {
+  visibility: hidden;
+  background-color: #121619;
+  color: #fff;
+  border: 3px solid #E52166;
+  border-radius: 16px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.annotation .left {
+  left: 50%;
+}
+
+.annotation .right {
+  right: 50%;
+}
+
+.annotation:hover .prompt {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .annotation .prompt {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
